@@ -1,0 +1,13 @@
+body {
+  background: darkgreen;
+}
+
+input[type=search] {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  letter-spacing: 4px;
+  line-height: 32px;
+  font-size: 28px;
+  word-spacing: 20px;
+}

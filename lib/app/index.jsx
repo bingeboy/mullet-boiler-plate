@@ -4,18 +4,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app.jsx';
 
-// main();
-//
-// function main() {
-//     React.render(
-//       <App />
-//     , document.getElementById('app'));
-// }
+main();
 
-class MyComponent extends React.Component {
-  render() {
-    return <div>Hello World</div>;
-  }
+function main() {
+    ReactDOMServer.renderToString(
+      <App />
+    , document.getElementById('app'));
 }
 
-ReactDOMServer.renderToString(<MyComponent />);
+ReactDOMServer.renderToString(<App />);

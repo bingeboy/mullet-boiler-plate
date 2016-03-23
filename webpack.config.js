@@ -4,20 +4,19 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  context: __dirname + "/lib",
 
   node: {
       Buffer: false
   },
 
   entry: {
-    app: ['./app'], //add more entry points
+    app: ['./lib/app'], //add more entry points
   },
 
   output: {
     filename: 'bundle.js',
-    path: path.join(__dirname, './build'),
-    publicPath: 'http://0.0.0.0:8000'
+    path: __dirname + '/build',
+    publicPath: '/build/'
   },
 
   module: {

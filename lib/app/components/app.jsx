@@ -1,14 +1,16 @@
-'use strict'
+import React, { PropTypes } from 'react';
 
-import React from 'react'
-import ReactDOM from 'react-dom'
+const App = ({ className, children }) => (
+    <div className={className}>
+      {children}
+    </div>
+  );
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <div>
-        Foo bar baaz
-      </div>
-    );
-  }
-}
+App.propTypes = {
+  className: PropTypes.String,
+  children: PropTypes.element,
+};
+
+export {
+  App,
+};
